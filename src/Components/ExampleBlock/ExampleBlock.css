@@ -1,0 +1,132 @@
+.video-profile-section {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+.section-heading {
+    width: 90%;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.profile-row {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}
+
+.profile-info-block {
+    width: 50%;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile-info-heading {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.profile-info-subheading {
+    font-size: 2.5rem;
+}
+
+.profile-info-content {
+    width: 90%;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.videoBlock {
+    width: 560px;
+    height: 315px;
+}
+
+.video {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+}
+
+/* responsive3 */
+@media (max-width:1359px) {
+    .video {
+        width: 500px;
+        height: 280px;
+    }
+}
+
+/* responsive4 */
+@media (max-width:1249px) {
+    .profile-info-heading {
+        margin: 0;
+    }
+    
+    .profile-info-subheading {
+        margin: .5rem 0;
+    }
+    
+    .video {
+        width: 400px;
+        height: 230px;
+    }
+}
+
+/* responsive5 */
+@media (max-width: 1024px) {
+    .video-profile-section {
+        width: 90%;
+    }
+    
+    .profile-info-block {
+        min-height: fit-content;
+    }
+    
+    .videoBlock {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    
+    .video {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+/* responsive7 */
+@media (max-width:768px) {
+    .video {
+        width: 90%;
+        height: 270px;
+    }
+}
+
+/* responsive8 */
+@media (max-width:639px) {
+    .video-profile-section {
+        width: 85%;
+    }
+    
+    .video {
+        height: 180px;
+    }
+}
+
+/* responsive9 */
+@media (max-width:430px) {
+    .video {
+        height: 250px;
+    }
+}

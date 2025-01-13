@@ -1,0 +1,138 @@
+.footer {
+    width: 95dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    object-fit: contain;
+}
+
+.footerContactList {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    row-gap: 3rem;
+}
+
+.footerForm {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    row-gap: 3rem;
+}
+
+.footerContactListHeading {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.footerContactLink {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+}
+
+.footer-form-input {
+    padding: .5rem ;
+}
+
+.footer-end {
+    width: 100%;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+/* responsive4 */
+@media (max-width:1249px) {
+    .footerLogo {
+        width: 400px;
+    }
+}
+
+/* responsive5 */
+@media (max-width: 1024px) {
+    .footerLogo {
+        width: 350px;
+    }
+}
+
+/* responsive6 */
+@media (max-width:911px) {
+    .footer {
+        flex-direction: column;
+    }
+    
+    .footerLogo {
+        width: 500px;
+    }
+}
+
+/* responsive7 */
+@media (max-width:768px) {
+    .footerLogo {
+        width: 400px;
+    }
+}
+
+/* responsive8 */
+@media (max-width:639px) {
+    .footer {
+        align-items: flex-end;
+    }
+    
+    .footer-column {
+        width: 90%;
+    }
+    
+    .footerLogo {
+        width: 300px;
+    }
+    
+    .footerContactList {
+        width: 90%;
+        align-items: center;
+    }
+    
+    .footerForm {
+        width: 70%;
+        margin-right: 4rem;
+    }
+    
+    .footer-end {
+        width: 85%;
+        text-wrap: balance;
+    }
+}
+
+/* responsive9 */
+@media (max-width:430px) {
+    .footerLogo {
+        width: 200px;
+    }
+    
+    .footerForm {
+        margin-right: 2rem;
+    }
+    
+    .footerContactListHeading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}

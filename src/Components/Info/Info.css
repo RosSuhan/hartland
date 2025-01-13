@@ -1,0 +1,170 @@
+.whyChooseUsSection {
+    width: 90%;
+    padding: 6rem 0;
+}
+
+.whySubHeading {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.whyMainHeading {
+    font-size: 3rem;
+    color: var(--red);
+    margin-top: 0;
+    text-shadow: 1px 2px #000;
+}
+
+.mainTabsRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    row-gap: 3rem;
+}
+
+.inlineTabsBlock,
+.columnTabsBlock {
+    width: 50%;
+}
+
+.inlineTabsBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.columnTabsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.inlineTab {
+    width: calc(99%/3);
+    background-color: #4c4b4b;
+    text-align: center;
+    border: 1px #000 solid;
+    padding: 2rem 0;
+    margin: 0;
+    color: #fff;
+}
+
+.leftCorner {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightCorner {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.inlineTabInfo {
+    display: none;
+}
+
+.active {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.inlineContent {
+    width: 90%;
+    line-height: 1.8;
+}
+
+.tabsDetails {
+    width: 80%;
+    background-color: #4c4b4b;
+    border-radius: 10px;
+}
+
+.tabsDetailsSummary {
+    border: 1px #000 solid;
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.tabsDetailsInfo {
+    padding: 0 2rem;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* responsive3 */
+@media (max-width:1359px) {
+    .inlineTab {
+        width: calc(98.5%/3);
+        /* padding: 2rem 0; */
+        /* margin: 0; */
+    }
+}
+
+/* responsive5 */
+@media (max-width: 1024px) {
+    .inlineTabsBlock,
+    .columnTabsBlock {
+        width: 90%;
+    }
+}
+
+
+/* responsive8 */
+@media (max-width:639px) {
+    .whyChooseUsSection {
+        width: 82%;
+    }
+
+    .whyMainHeading {
+        font-size: 2.5rem;
+    }
+    
+    .inlineTabsBlock,
+    .columnTabsBlock {
+        width: 98%;
+    }
+    
+    .inlineTab {
+        width: fit-content;
+        padding: 1rem .65rem; 
+    }
+}
+
+/* responsive9 */
+@media (max-width:430px) {
+    .inlineTab {
+        width: 100%;
+        padding: 1rem 0; 
+    }
+
+    .tabsDetails {
+        width: 90%;
+        text-align: center;
+    }
+
+    .tabsDetailsSummary {
+        padding: 1rem;
+    }
+}
