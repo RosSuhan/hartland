@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout"
 import Home from './Pages/home'
 import GraphicPage from './Pages/graphicDesign'
@@ -8,7 +8,7 @@ import WebDev from './Pages/webDev'
 function App() {
   
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />}/>
@@ -17,7 +17,7 @@ function App() {
           <Route path='/web-dev' element={<WebDev />}/>
         </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 
